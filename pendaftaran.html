@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <a href="index.html">
+                <img src="./src/img/LibraryReg_logo.png" width="240" height="80">
+            </a>
+
+            <div class="header-right">
+                <ul class="nav-btn">
+                <li><a href="./index.html">Beranda</a></li>
+                <li><a href="">Tentang</a></li>
+                <li><a href="">Layanan</a></li>
+                <li><a href="./pendaftaran.html" class="curr-page">Pendaftaran</a></li>
+                <li><a href="">Data Anggota</a></li>
+                </ul>
+
+                <a href="" class="btn-blue btn-login">Login</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <section class="register">
+        <div class="register-info">
+            <span class="register-badge">Bersama kita belajar</span>
+            <h2>Bergabung<br>Menjadi Anggota</h2>
+            <p>Dapatkan akses ke berbagai koleksi, fasilitas, dan layanan digital perpustakaan.</p>
+
+            <ul class="register-benefits">
+                <li><img src=""> Pinjam buku & e-book</li>
+                <li><img src=""> Akses jurnal online</li>
+                <li><img src=""> Ruang belajar</li>
+                <li><img src=""> Kegiatan literasi</li>
+            </ul>
+        </div>
+
+        <div class="register-form">
+            <h2>Formulir Pendaftaran Anggota</h2>
+            <p class="form-desc">Lengkapi data berikut untuk mendaftar sebagai anggota perpustakaan.</p>
+
+            <form action="" method="post">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim">NIM/NIP <span class="required">*</span></label>
+                        <input type="text" id="nim" name="nim" placeholder="Masukkan NIM atau NIP" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prodi">Program Studi <span class="required">*</span></label>
+                        <select id="prodi" name="prodi" required>
+                            <option value="" disabled selected>Pilih program studi</option>
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Manajemen</option>
+                            <option>Akuntansi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis">Jenis Keanggotaan <span class="required">*</span></label>
+                        <select id="jenis" name="jenis" required>
+                            <option value="" disabled selected>Pilih jenis keanggotaan</option>
+                            <option>Mahasiswa</option>
+                            <option>Dosen</option>
+                            <option>Tenaga Kependidikan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon <span class="required">*</span></label>
+                        <input placeholder="08xxxxxxxxxx">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="alamat">Alamat <span class="required">*</span></label>
+                        <input placeholder="Masukkan alamat">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn-white btn-reset">Reset</button>
+                    <button type="submit" class="btn-blue btn-submit">Daftar Sekarang</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
